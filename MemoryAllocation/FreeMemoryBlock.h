@@ -12,7 +12,7 @@ public:
 	
 	FreeMemoryBlock(double startAddress, double endAddress)
 	:MemoryBlock(startAddress, endAddress){
-		this->next = NULL:
+		this->next = NULL;
 	}
 
 	virtual FreeMemoryBlock *getNextBlock(){
@@ -22,4 +22,6 @@ public:
 	virtual void setNextBlock(FreeMemoryBlock *freeMemoryBlock){
 		this->next = freeMemoryBlock;
 	}
-}
+};
+
+#endif

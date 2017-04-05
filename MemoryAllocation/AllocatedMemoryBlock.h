@@ -15,7 +15,7 @@ public:
 		this->next = NULL;
 	}
 
-	void getProcessId(){
+	double getProcessId(){
 		return this->processId;
 	}
 
@@ -23,8 +23,10 @@ public:
 		return this->next;
 	}
 
-	virtual void setNextBlock(AllocatedMemoryBlock* allocatedMemoryBlock){
+	virtual void setNextBlock(AllocatedMemoryBlock *allocatedMemoryBlock){
 		this->next = allocatedMemoryBlock;
 	}
 
-}
+};
+
+#endif

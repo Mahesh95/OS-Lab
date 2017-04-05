@@ -31,8 +31,10 @@ public:
 	}
 
 	virtual MemoryBlock* getNextBlock() = 0;
-	virtual void setNextBlock(MemoryBlock*) = 0;
+	virtual void setNextBlock(MemoryBlock*){
+		
+	}
 
-}
+};
 
 #endif
